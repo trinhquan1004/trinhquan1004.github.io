@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow: hidden;
+   background-color: #160000;
+   /* background-color: #ee82ca;*/
+}
+
+body {
+    -webkit-font-soothing: antialiased;
+    color: #ffdada;
+}
+
+.webgl {
+    position: fixed;
+    width: 100vw;
+    height: 100vw;
+    top: 0;
+    left: 0;
+    outline: none;
+}
+
+body::before{
+    content: "";
+    position: absolute;
+    border: 8px solid;
+    inset: 1rem;
+    z-index: 100;
+    pointer-events: none;
+}
+
+h1{
+    position: absolute;
+    top: 10vh;
+    left: 1rem;
+    right: 1rem;
+    text-align: center;
+    font-size: max(2rem, 2vh);
+    color:#ff99a1;
+}
+h2{
+    position: absolute;
+    top: 39vh;
+    left: 1rem;
+    right: 1rem;
+    text-align: center;
+    font-size: max(1.5rem, 2.5vh);
+    color: #009dff;
+}
+h3{
+    position: absolute;
+    top: 84vh;
+    left: 1rem;
+    right: 1rem;
+    text-align: center;
+    font-size: max(2rem, 2vh);
+    color:#ff99a1;
+}
+h4{
+    position: absolute;
+    top: 18vh;
+    left: 1rem;
+    right: 1rem;
+    text-align: center;
+    font-size: max(3rem, 3vh);
+    color:#ff99a1;
+}
+
+button {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    height: 12vh;
+    width: 12vh;
+    transform: translateY(2vh);
+    right: 0;
+    margin: auto;
+    -webkit-appearance: none;
+    background: transparent;
+    color: inherit;
+    border: none;
+    cursor: pointer;
+}
+
+svg{
+    width: 3.5vh;
+}
+@-webkit-keyframes my {
+    0% { color: #00BFFF; } 
+    50% { color: #87CEFA;  } 
+    100% { color: #00BFFF;  }
+}
+@-moz-keyframes my { 
+    0% { color: #00BFFF; } 
+    50% { color: #87CEFA;  } 
+    100% { color: #00BFFF;  }
+}
+@-o-keyframes my { 
+    0% { color: #00BFFF; } 
+    50% { color: #87CEFA;  } 
+    100% { color: #00BFFF;  }
+}
+@keyframes my { 
+    0% { color: #00BFFF; } 
+    50% { color: #1E90FF;  } 
+    100% { color: #00BFFF;  }
+} 
+/*@-moz- hỗ trợ cho firefox.
+@-webkit- hỗ trợ cho Google Chrome và Safari.*/
+.test {
+        /*background:#3d3d3d;*/
+        font-size:24px;
+        font-weight:bold;
+    -webkit-animation: my 700ms infinite;
+    -moz-animation: my 700ms infinite; 
+    -o-animation: my 700ms infinite; 
+    animation: my 700ms infinite;
+}
+
+/* tao nhapnhay trai tim*/
+@-webkit-keyframes my1 {
+    0% { color: #ff99a1; } 
+    50% { color:#FFB5C5;  } 
+    100% { color: #ff99a1;  }
+}
+@-moz-keyframes my1 { 
+    0% { color: #ff99a1; } 
+    50% { color:#FFB5C5;  } 
+    100% { color: #ff99a1;  }
+}
+@-o-keyframes my1 { 
+    0% { color: #ff99a1; } 
+    50% { color:#FFB5C5;  } 
+    100% { color: #ff99a1;  }
+}
+@keyframes my1 { 
+    0% { color: #ff99a1; } 
+    50% { color:#FFB5C5;  } 
+    100% { color: #ff99a1;  }
+} 
+.test1 {
+    /*background:#3d3d3d;*/
+    font-size:26px;
+    font-weight:bold;
+-webkit-animation: my1 1000ms infinite;
+-moz-animation: my1 1000ms infinite; 
+-o-animation: my1 1000ms infinite; 
+animation: my1 1000ms infinite;
+}
+
+@-o-keyframes my2 { 
+    0% { color: #ff99a1; } 
+    50% { color:#FF0000;  } 
+    100% { color: #ff99a1;  }
+}
+@keyframes my2 { 
+    0% { color: #ff99a1; } 
+    50% { color:#FF6A6A;  } 
+    100% { color: #ff99a1;  }
+} 
+.test2 {
+    /*background:#3d3d3d;*/
+    font-size:40px;
+    font-weight:bold;
+-webkit-animation: my2 1s infinite;
+-moz-animation: my2 1000ms infinite; 
+-o-animation: my2 1000ms infinite; 
+animation: my2 1000ms infinite;
+}
+/* tao chu bien mat xuat hien
+@-webkit-keyframes blinker {
+     0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+    ban dau :from { opacity: 1.0; }
+  to { opacity: 0.0; }
+  }
+  
+.waitingForConnection {
+    -webkit-animation-name: blinker;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: cubic-bezier(.5, 0, 1, 1);
+    -webkit-animation-duration: 0.7s;
+  }*/
+  /*.blink_me {
+    -webkit-animation-name: blinker;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    
+    -moz-animation-name: blinker;
+    -moz-animation-duration: 1s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    
+    animation-name: blinker;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@-moz-keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+@keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}*/
